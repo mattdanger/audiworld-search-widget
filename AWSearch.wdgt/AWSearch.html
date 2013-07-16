@@ -1,0 +1,131 @@
+<!--
+Title: Audiworld.com search widget
+Description: Searches Audiworld forum posts via Google
+Author: Matt [Danger] West (matt@mattdanger.net)
+Date: June 1, 2008
+-->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<style type="text/css" title="AppleStyle">
+		@import "AWSearch.css";
+	</style>
+	<script type="text/javascript" src="AWSearch.js" charset="utf-8"/>
+    <script type="text/javascript" src="AppleClasses/AppleInfoButton.js" charset="utf-8"/>
+    <script type="text/javascript" src="AppleClasses/AppleAnimator.js" charset="utf-8"/>
+    <script type="text/javascript" src="AppleClasses/AppleButton.js" charset="utf-8"/>
+</head>
+<body onload="setup()">
+    <div id="front">
+		<img src="Default.png">
+		<input type="search" id="search-input" onkeydown="keydown(event)" results="5" placeholder="Enter search keywords...">
+        <span id="search-forum-name">Forum:</span>
+        <select id="search-forum-dropdown" name="forum">
+            <option value="" />All
+            <option value="" />
+            <option value="a6100/" />100/A6 (C4)
+            <option value="9080/" />80 / 90 / CQ / Cabriolet
+            <option value="v8/" />100 / 200 / 5000 / V8
+            <option value="4000/" />4000 / Coupe GT
+            <option value="a2/" />A2
+            <option value="a3/" />A3 / S3
+            <option value="a4/" />A4 (B5)
+            <option value="a4gen2/" />A4 (B6)
+            <option value="a4cabriolet/" />A4 (B6 Cabriolet)
+            <option value="a4b7/" />A4 (B7)
+            <option value="a4b8/" />A4 (B8)
+            <option value="a5/" />A5 / S5
+            <option value="a6100/" />A6 / S6 (C4)
+            <option value="s4s6/" /> A6 / S6 (C4 S6)
+            <option value="a6/" />A6 / S6 (C5)
+            <option value="c6a6/" />A6 / S6 (C6)
+            <option value="a8/" />A8 / S8 (D2)
+            <option value="a8d3/" />A8 / S8 (D3)
+            <option value="allroad/" />Allroad Quattro
+            <option value="tt/" />TT (Mk1)
+            <option value="tt2/" />TT (Mk2)
+            <option value="s4s6/" />S4 (C4)
+            <option value="s4/" />S4 (B5)
+            <option value="s4b6/" />S4 (B6)
+            <option value="s4b7/" />S4 (B7)
+            <option value="q5/" />Q5
+            <option value="q7/" />Q7
+            <option value="r8/" />R8
+            <option value="rs4b7/" />RS4 (B7)
+            <option value="rs6/" />RS6
+            <option value="quattro/" />Ur Quattro / Sport Quattro
+            <option value="vintage/" />Vintage Audi
+
+            <option value="" />
+            <option value="18t/" />1.8t
+            <option value="20tfsi/" />2.0T FSI
+            <option value="12v/" />12v V6
+            <option value="27tv6/" />2.7t V6
+            <option value="30vv6/" />30v V6
+            <option value="3224vvr6/" />3.2 24v VR6
+            <option value="42v8/" />4.2 V8
+            <option value="fi/" />Forced Induction
+            <option value="i5/" />Inline 5
+            <option value="tdi/" />TDI
+
+            <option value="" />
+            <option value="detail/" />Auto Detailing
+            <option value="brakes/" />Brake Systems
+            <option value="audio/" />Car Audio
+            <option value="eurodelivery/" />European Delivery
+            <option value="racing/" />Motorsports
+            <option value="othermakes/" />Other Makes
+            <option value="performance/" />Performance & Tuning
+            <option value="suspension/" />Suspension
+            <option value="telematics/" />Telematics
+            <option value="wheel/" />Wheels & Tires
+            <option value="vag/" />VAG-COM Diagnostics
+            <option value="vad/" />VAD
+
+            <option value="" />
+            <option value="computer/" />Computers
+            <option value="firearms/" />Firearms
+            <option value="groupbuys/" />Group Buys
+            <option value="htelect/" />Home Theater
+            <option value="events/" />News & Events
+            <option value="other/" />Off-Topic
+            <option value="photo/" />Photography
+            <option value="politics/" />Politics
+            <option value="sports/" />Sports
+            <option value="waterfest/" />Waterfest
+
+            <option value="" />
+            <option value="oz/" />Australian
+            <option value="canada/" />Canadian
+            <option value="european/" />European
+            <option value="lrqc/" />Chicago
+            <option value="qclubflorida/" />Florida
+            <option value="midatlantic/" />Mid-Atlantic
+            <option value="midwest/" />Midwest
+            <option value="newengland/" />New England
+            <option value="norcal/" />NorCal
+            <option value="nynj/" />NY/NJ/CT
+            <option value="pacificnw/" />Pacific Northwest
+            <option value="rockymtn/" />Rocky Mountain
+            <option value="socal/" />SoCal
+            <option value="southeast/" />South East
+            <option value="southwest/" />South West
+            <option value="texas/" />Texas
+        </select>
+        <input type="submit" id="search-button" onclick="search()" value="Search" />
+        <div id="info-button"></div>
+    </div>
+    <div id="back">
+		<img src="Back.png">
+        <div id="back-line-1">
+            <a id="audiworld-link" href="http://audiworld.com" onclick="widget.openURL('http://audiworld.com')">Audiworld.com</a> search widget.
+        </div>
+        <div id="back-line-2">
+            Created by Matt Danger | <a href="http://mattdanger.net" onclick="widget.openURL('http://mattdanger.net')">mattdanger.net<a/>
+        </div>
+        <div id="done-button"></div>
+    </div>
+</body>
+</html>

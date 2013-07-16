@@ -1,0 +1,96 @@
+/*
+Title: Audiworld.com search widget
+Description: Searches Audiworld forum posts via Google
+Author: Matt [Danger] West (matt@mattdanger.net)
+Date: June 1, 2008
+*/
+
+body {
+	margin: 0;
+}
+
+a {
+    font: 10px "Lucida Grande";
+    text-decoration: none;
+    color: #FFF;
+}
+
+#front {
+    display: block;
+}
+
+#back {
+    display: none;
+}
+
+#search-input {
+    position: absolute;
+    font: 11px "Lucida Grande";
+	top:4px;
+    left:250px;
+    width:240px;
+    -apple-dashboard-region: dashboard-region(control rectangle);
+}
+
+#search-forum-name {
+    position: absolute;
+    font: 11px "Lucida Grande";
+    color: #FFF;
+	top:31px;
+    left:250px;
+    -apple-dashboard-region: dashboard-region(control rectangle);
+}
+
+#search-forum-dropdown {
+    position: absolute;
+    font: 10px "Lucida Grande";
+	top:31px;
+    left:293px;
+    width:145px;
+    -apple-dashboard-region: dashboard-region(control rectangle);
+}
+
+#search-button {
+    position: absolute;
+    font: 8px "Lucida Grande";
+    color: #000;
+	top:31px;
+    left:445px;
+    -apple-dashboard-region: dashboard-region(control rectangle);
+}
+
+#info-button {
+    position:absolute;
+    top:22px;
+    left:495px;
+}
+
+#back-line-1 {
+    position: absolute;
+    font: bold 13px "Lucida Grande";
+    color: #FFF;
+    top: 8px;
+    left: 50px;
+    -apple-dashboard-region: dashboard-region(control rectangle);
+}
+
+#back-line-2 {
+    position: absolute;
+    font: 10px "Lucida Grande";
+    color: #FFF;
+    top: 31px;
+    left: 50px;
+    -apple-dashboard-region: dashboard-region(control rectangle);
+}
+
+#audiworld-link {
+    font: bold 13px "Lucida Grande";
+    text-decoration: none;
+    color: #FFF;
+}
+
+#done-button {
+    position:absolute;
+    top:16px;
+    left:445px;
+}
